@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furni with Tailwind</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <style>
+
+        .footer-center .center-1 a, .footer-center .center-center a, .footer-center .center-2 a, .footer-center .center-right a{
+            transition: all 0.2s ease-in-out;
+            width: fit-content;
+        }
+        .footer-center .center-1 a:hover, .footer-center .center-center a:hover, .footer-center .center-2 a:hover, .footer-center .center-right a:hover{
+           color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="h-screen w-screen font-sans overflow-x-hidden bg-[#eff2f1]">
+        <nav class="flex p-8 bg-[#3b5d50] items-center justify-around">
+            <div class="left text-white text-4xl font-semibold">Furni.</div>
+            <div class="center ">
+                <div class="links translate-x-20 flex items-center gap-[40px] justify-center text-2xl text-white ">
+                    <a href="" class="border-b-4 border-b-yellow-500">Home</a>
+                    <a href=""
+                        class="relative text-slate-300 after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-0 after:h-[4px] after:bg-yellow-500 after:transition-all after:duration-300 hover:after:w-full  hover:text-white">Shop</a>
+                    <a href=""
+                        class="relative text-slate-300 after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-0 after:h-[4px] after:bg-yellow-500 after:transition-all after:duration-300 hover:after:w-full  hover:text-white">About</a>
+                    <a href=""
+                        class="relative text-slate-300 after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-0 after:h-[4px] after:bg-yellow-500 after:transition-all after:duration-300 hover:after:w-full  hover:text-white">Service</a>
+                    <a href=""
+                        class="relative text-slate-300 after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-0 after:h-[4px] after:bg-yellow-500 after:transition-all after:duration-300 hover:after:w-full  hover:text-white">Blog</a>
+                    <a href=""
+                        class="relative text-slate-300 after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-0 after:h-[4px] after:bg-yellow-500 after:transition-all after:duration-300 hover:after:w-full  hover:text-white">Contact
+                        us</a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="icons flex items-center justify-center gap-[20px] text-white text-2xl gap-[40px] ">
+                    <i class="ri-user-line cursor-pointer"></i>
+                    <i class="ri-shopping-cart-line cursor-pointer"></i>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero grid grid-cols-2  h-[80vh] w-screen">
+            <div class="hero-left bg-[#3b5d50] flex flex-col align-center text-white itmes-center p-[120px] gap-[35px]">
+                <h1 class="text-7xl font-bold">Modern Interior <br> Design Studio</h1>
+                <p class="text-xl text-slate-300">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit.
+                    Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+                <div class="hero-btn flex items-center gap-[20px]">
+                    <button
+                        class="px-9 py-4 rounded-4xl bg-yellow-400 text-black text-xl font-semibold  hover:bg-yellow-500">Shop
+                        Now</button>
+                    <button
+                        class="px-9 py-4 rounded-4xl border-1 border-slate-400 text-xl font-semibold  hover:border-slate-100 ">Explore</button>
+                </div>
+            </div>
+            <div class="hero-right bg-[#3b5d50] flex items-center justify-center ">
+                <img src="https://untree.co/demos/furni/images/couch.png" alt=" Couch" class="w-[100%] -translate-x-15">
+            </div>
+        </section>
+
+        <section class="page2 grid grid-cols-[1.2fr_1fr_1fr_1fr] min-h-[90vh] w-screen px-15">
+            <div class="page2-left flex flex-col justify-center gap-[20px]">
+                <h2 class="text-[40px] tracking-tigh font-semi-bold ">Crafted with excellent material.</h2>
+                <p class="text-l text-slate-700">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit.
+                    Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+                <button
+                    class="px-7 py-3 bg-[#2f2f2f] w-fit text-white rounded-4xl text-xl font-semibold hover:bg-[#1d1b1b]">Explore</button>
+            </div>
+
+            <div class="page2-center1 flex flex-col items-center gap-[20px] justify-center">
+
+                <div
+                    class="hover-part relative group overflow-hidden w-fit flex flex-col items-center p-5 rounded-2xl transition-all duration-500">
+
+                    <div
+                        class="overlay absolute bottom-[-100px] left-0 h-0 w-full bg-[#dce5e4] rounded-2xl z-10 transition-all duration-500 group-hover:h-full">
+                    </div>
+
+                    <img src="https://untree.co/demos/furni/images/product-1.png" alt="Nordic Chair"
+                        class="relative z-20 transition-all duration-500 group-hover:-translate-y-5">
+
+                    <h3 class="relative z-20 text-xl font-medium mt-5">Nordic Chair</h3>
+
+                    <p class="relative z-20 text-2xl font-bold">$50.00</p>
+
+
+                    <div
+                        class="absolute bottom-[-20px] right-0 opacity-0 transition-all duration-500 group-hover:bottom-10 right-10 group-hover:opacity-100 z-30">
+                        <i
+                            class="ri-add-large-line text-xl text-white  p-3 bg-[#2f2f2f] rounded-full cursor-pointer"></i>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="page2-center2 flex flex-col items-center gap-[20px] justify-center">
+                <div
+                    class="hover-part relative group overflow-hidden w-fit flex flex-col items-center p-5 rounded-2xl transition-all duration-500">
+
+                    <div
+                        class="overlay absolute bottom-[-100px] left-0 h-0 w-full bg-[#dce5e4] rounded-2xl z-10 transition-all duration-500 group-hover:h-full">
+                    </div>
+
+                    <img src="https://untree.co/demos/furni/images/product-2.png" alt="Krezo Aero Chair"
+                        class="relative z-20 transition-all duration-500 group-hover:-translate-y-5">
+                    <h3 class="relative z-20 text-xl font-medium mt-5">Krezo Aero Chair</h3>
+                    <p class="relative z-20 text-2xl font-bold">$78.00</p>
+
+                    <div
+                        class="absolute bottom-[-20px] right-0 opacity-0 transition-all duration-500 group-hover:bottom-10 right-10 group-hover:opacity-100 z-30">
+                        <i
+                            class="ri-add-large-line text-xl text-white  p-3 bg-[#2f2f2f] rounded-full cursor-pointer"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="page2-center2 flex flex-col items-center gap-[20px] justify-center">
+                <div
+                    class="hover-part relative group overflow-hidden w-fit flex flex-col items-center p-5 rounded-2xl transition-all duration-500">
+
+                    <div
+                        class="overlay absolute bottom-[-100px] left-0 h-0 w-full bg-[#dce5e4] rounded-2xl z-10 transition-all duration-500 group-hover:h-full">
+                    </div>
+
+                    <img src="https://untree.co/demos/furni/images/product-3.png" alt="Ergonomic Chair"
+                        class="relative z-20 transition-all duration-500 group-hover:-translate-y-5">
+                    <h3 class="relative z-20 text-xl font-medium mt-5">Ergonomic Chair</h3>
+                    <p class="relative z-20 text-2xl font-bold">$43.00</p>
+
+                    <div
+                        class="absolute bottom-[-20px] right-0 opacity-0 transition-all duration-500 group-hover:bottom-10 right-10 group-hover:opacity-100 z-30">
+                        <i
+                            class="ri-add-large-line text-xl text-white  p-3 bg-[#2f2f2f] rounded-full cursor-pointer"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="page3 h-screen w-screen flex flex-row items-center justify-center gap-30 p-14 -mt-10">
+            <div class="page3-left bg-color-green-300 h-full w-[45%] flex flex-col justify-center gap-10">
+
+                <div class="page3-left-top">
+                    <h1 class="text-3xl font-semibold">
+                        Why Choose Us
+                    </h1>
+
+                    <p class="mt-4 text-gray-500">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit.
+                        Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+                </div>
+
+                <div class="page3-bottom-icons grid grid-cols-2 gap-8">
+
+                    <div class="feature flex flex-col gap-2">
+                        <div
+                            class="icon relative w-fit after:content-[''] after:absolute after:h-8 after:w-8 after:bg-green-200 after:rounded-full after:top-4 after:left-5 after:z-10">
+                            <img src="https://untree.co/demos/furni/images/truck.svg" alt="" class="relative z-20">
+
+                        </div>
+                        <h3 class="font-bold">Fast & Free Shipping</h3>
+                        <p class="text-gray-500">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit.
+                            Aliquam vulputate.</p>
+                    </div>
+
+                    <div class="feature flex flex-col gap-2">
+                        <div
+                            class="icon relative w-fit after:content-[''] after:absolute after:h-8 after:w-8 after:bg-green-200 after:rounded-full after:top-4 after:left-5 after:z-10">
+                            <img src="https://untree.co/demos/furni/images/bag.svg" alt="" class="relative z-20">
+
+                        </div>
+                        <h3 class="font-bold">Easy to Shop</h3>
+                        <p class="text-gray-500">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit.
+                            Aliquam vulputate.</p>
+                    </div>
+
+                    <div class="feature flex flex-col gap-2">
+                        <div
+                            class="icon relative w-fit after:content-[''] after:absolute after:h-8 after:w-8 after:bg-green-200 after:rounded-full after:top-4 after:left-5 after:z-10">
+                            <img src="https://untree.co/demos/furni/images/support.svg" alt="" class="relative z-20">
+
+                        </div>
+                        <h3 class="font-bold">24/7 Support</h3>
+                        <p class="text-gray-500">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit.
+                            Aliquam vulputate.</p>
+                    </div>
+
+                    <div class="feature flex flex-col gap-2">
+                        <div
+                            class="icon relative w-fit after:content-[''] after:absolute after:h-8 after:w-8 after:bg-green-200 after:rounded-full after:top-4 after:left-5 after:z-10">
+                            <img src="https://untree.co/demos/furni/images/return.svg" alt="" class="relative z-20">
+
+                        </div>
+                        <h3 class="font-bold">Hassle Free Returns</h3>
+                        <p class="text-gray-500">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit.
+                            Aliquam vulputate.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="page3-right h-full w-[45%]">
+                <img src="https://untree.co/demos/furni/images/why-choose-us-img.jpg" alt=""
+                    class="h-full w-[90%] h-[90%] object-cover rounded-3xl mt-15 hover:scale-102 transition-all duration-300 ease-in-out">
+            </div>
+        </section>
+
+        <section class="page4 flex gap-20 h-screen w-screen mt-30 p-14">
+
+            <div class="page4-left w-1/2 relative h-full">
+                <img src="https://untree.co/demos/furni/images/img-grid-1.jpg" alt=""
+                    class="big-img absolute h-[90%] w-[68%] object-cover z-10 rounded-2xl hover:scale-102 transition-all duration-300 ease-in-out">
+                <img src="https://untree.co/demos/furni/images/img-grid-2.jpg" alt=""
+                    class="top-small-img absolute h-[40%] w-[30%] object-cover z-20 right-0 rounded-2xl hover:scale-102 transition-all duration-300 ease-in-out">
+                <img src="https://untree.co/demos/furni/images/img-grid-3.jpg" alt=""
+                    class="bottom-small-img absolute h-[70%] w-[55%] object-cover z-20 bottom-[-13%] right-0 rounded-3xl hover:scale-102 transition-all duration-300 ease-in-out">
+            </div>
+            <div class="page4-right w-1/2 pr-25 flex flex-col gap-10">
+                <h2 class="text-4xl font-semibold">We Help You Make Modern Interior Design</h2>
+                <p class="text-xl text-gray-500 font-light">Donec facilisis quam ut purus rutrum lobortis. Donec vitae
+                    odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor
+                    tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+
+                <ul class="grid grid-cols-2 grid-rows-2 gap-4 relative ml-5">
+                    <li
+                        class=" relative before:content-[''] before:absolute before:w-3 before:h-3 before:border-2 before:border-[#3b5d50] before:rounded-full before:top-2 before:left-[-20px]">
+
+                        <p class="relaive">Donec vitae odio quis nisl dapibus malesuada </p>
+                    </li>
+                    <li
+                        class=" relative before:content-[''] before:absolute before:w-3 before:h-3 before:border-2 before:border-[#3b5d50] before:rounded-full before:top-2 before:left-[-20px]">
+
+                        <p>Donec vitae odio quis nisl dapibus malesuada </p>
+                    </li>
+
+                    <li
+                        class=" relative before:content-[''] before:absolute before:w-3 before:h-3 before:border-2 before:border-[#3b5d50] before:rounded-full before:top-2 before:left-[-20px]">
+
+                        <p>Donec vitae odio quis nisl dapibus malesuada </p>
+                    </li>
+
+                    <li
+                        class=" relative before:content-[''] before:absolute before:w-3 before:h-3 before:border-2 before:border-[#3b5d50] before:rounded-full before:top-2 before:left-[-20px]">
+
+                        <p>Donec vitae odio quis nisl dapibus malesuada </p>
+                    </li>
+
+                </ul>
+
+                <button
+                    class="w-fit px-12 py-4 bg-[#2f2f2f] rounded-full text-white text-xl font-semibold hover:bg-[#1d1b1b]">Explore</button>
+            </div>
+        </section>
+
+        <section class="page5 h-[60%] w-full flex justify-center items-center gap-10 px-20">
+            <div class="page5-left flex items-center justify-center gap-5">
+                <div class="left-1 relative w-fit">
+
+                    <div class="behind-box absolute top-4 left-6 w-33 h-33 bg-[#dce5e4] z-0 rounded-2xl"></div>
+
+                    <img src="https://untree.co/demos/furni/images/product-1.png" alt=""
+                        class="h-full w-70 object-cover relative  z-30 hover:scale-105 transition-all duration-300 ease-in-out">
+                </div>
+                <div class="left-2 flex flex-col gap-2">
+                    <h3 class="text-xl font-semibold">Nordic Chair</h3>
+                    <p class="font-medium text-gray-500">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio
+                    </p>
+                    <a href=""
+                        class=" w-fit font-medium relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 hover:after:w-20">Read
+                        more</a>
+                </div>
+            </div>
+
+            <div class="page5-left flex items-center justify-center gap-5">
+                <div class="left-1 relative w-fit">
+
+                    <div class="behind-box absolute top-4 left-6 w-33 h-33 bg-[#dce5e4] z-0 rounded-2xl"></div>
+
+                    <img src="https://untree.co/demos/furni/images/product-2.png" alt=""
+                        class="h-full w-70 object-cover relative  z-30 hover:scale-105 transition-all duration-300 ease-in-out">
+                </div>
+                <div class="left-2 flex flex-col gap-2">
+                    <h3 class="text-xl font-semibold">Kruzo Aero Chair</h3>
+                    <p class="font-medium text-gray-500">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio
+                    </p>
+                    <a href=""
+                        class=" w-fit font-medium relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 hover:after:w-20">Read
+                        more</a>
+                </div>
+            </div>
+
+            <div class="page5-left flex items-center justify-center gap-5">
+                <div class="left-1 relative w-fit">
+
+                    <div class="behind-box absolute top-4 left-6 w-33 h-33 bg-[#dce5e4] z-0 rounded-2xl"></div>
+
+                    <img src="https://untree.co/demos/furni/images/product-3.png" alt=""
+                        class="h-full w-70 object-cover relative  z-30 hover:scale-105 transition-all duration-300 ease-in-out">
+                </div>
+                <div class="left-2 flex flex-col gap-2">
+                    <h3 class="text-xl font-semibold">Ergonomic Chair</h3>
+                    <p class="font-medium text-gray-500">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio
+                    </p>
+                    <a href=""
+                        class=" w-fit font-medium relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 hover:after:w-20">Read
+                        more</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="page6 h-[90%] w-full px-18">
+            <div class="page6-top flex items-center justify-between">
+                <h3 class="text-4xl font-semibold">Recent Blog</h3>
+                <a href="" class="font-medium underline decoration-solid">View All Posts</a>
+            </div>
+            <div class="page6-bottom flex items-center justify-center gap-10 mt-15">
+                <div class="bottom-left">
+                    <img src="https://untree.co/demos/furni/images/post-1.jpg" alt=""
+                        class="rounded-3xl h-full w-full object-cover hover:opacity-75 transition-all duration-300 ease-in-out">
+                    <p class="text-xl font-medium mt-5 ml-4">First Time Home Owner Ideas <br>
+                        <span class="text-base font-light">by</span> Kristin Watson <span
+                            class="text-base font-light">on</span> Dec 19, 2021
+                    </p>
+                </div>
+
+                <div class="bottom-center">
+                    <img src="https://untree.co/demos/furni/images/post-2.jpg" alt=""
+                        class="rounded-3xl h-full w-full object-cover hover:opacity-75 transition-all duration-300 ease-in-out">
+                    <p class="text-xl font-medium mt-5 ml-4">How To Keep Your Furniture Clean<br>
+                        <span class="text-base font-light">by</span> Robert Fox <span
+                            class="text-base font-light">on</span> Dec 15, 2021
+                    </p>
+                </div>
+
+                <div class="bottom-right">
+                    <img src="https://untree.co/demos/furni/images/post-3.jpg" alt=""
+                        class="rounded-3xl h-full w-full object-cover hover:opacity-75 transition-all duration-300 ease-in-out">
+                    <p class="text-xl font-medium mt-5 ml-4">Small Space Furniture Apartment Ideas <br>
+                        <span class="text-base font-light">by</span> Kristin Watson <span
+                            class="text-base font-light">on</span> Dec 12, 2021
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="h-full w-full bg-white flex flex-col gap-10 relative px-20">
+
+            <div class="footer-top">
+
+                <div class="footer-top-left flex flex-col gap-5 mt-20">
+                    <div class="left-top flex items-center gap-5 ">
+
+                        <img src="https://untree.co/demos/furni/images/envelope-outline.svg" alt="" >
+                        <h3 class="font-semibold text-xl text-gray-500">Subscribe to Newsletter</h3>
+
+                    </div>
+
+                    <div class="left-bottom flex gap-4 items-center">
+                        <input type="text" placeholder="Enter your name"
+                            class="border border-gray-400 rounded-xl py-3 px-10 focus:outline-none">
+                        <input type="email" placeholder="Enter your email" class="border border-gray-400 rounded-xl py-3 px-10 focus:outline-none">
+
+                        <div class="icon py-2 px-8 bg-[#3b5d50] rounded-xl">
+                            <i class="ri-send-plane-fill text-white text-2xl" ></i>
+                        </div>
+
+                    </div>
+
+                    <div class = "right-top">
+                        <img src="https://untree.co/demos/furni/images/sofa.png" alt=""
+                            class="h-[45%] w-[25%] object-cover absolute -top-30 right-30 z-20">
+                    </div>
+                </div>
+                <div class="footer-top-right">
+                    <img src="" alt="">
+                </div>
+            </div>
+
+            <h2 class="text-5xl text-[#3b5d50] font-semibold">Furni.</h2>
+
+            <div class="footer-center grid grid-cols-[2fr_1fr_1fr_1fr_1fr] gap-10">
+                
+                <div class="center-left flex flex-col gap-8">
+                    
+                    <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant</p>
+
+                    <div class="center-left-icons flex gap-3 items-center ">
+                        <div class="icon h-10 w-10 bg-[#dce5e4] rounded-full flex items-center justify-center group hover:bg-[#3b5d50] transition-all ease">
+                            <i class="ri-facebook-fill font-medium text-[#3b5d50] group-hover:text-white"></i>
+                        </div>
+
+                        <div class="icon h-10 w-10 bg-[#dce5e4] rounded-full flex items-center justify-center group hover:bg-[#3b5d50] transition-all ease">
+                            <i class="ri-twitter-fill font-medium text-[#3b5d50] group-hover:text-white" ></i>
+                        </div>
+
+                        <div class="icon h-10 w-10 bg-[#dce5e4] rounded-full flex items-center justify-center group hover:bg-[#3b5d50] transition-all ease">
+                            <i class="ri-instagram-fill font-medium text-[#3b5d50] group-hover:text-white"></i>
+                        </div>
+
+                        <div class="icon h-10 w-10 bg-[#dce5e4] rounded-full flex items-center justify-center group hover:bg-[#3b5d50] transition-all ease">
+                            <i class="ri-linkedin-fill font-medium text-[#3b5d50] group-hover:text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="center-1 flex flex-col gap-5 font-medium">
+                    <a href="">About us</a>
+                    <a href="">Services</a>
+                    <a href="">Blog</a>
+                    <a href="">Contact us</a>
+                </div>
+               <div class="center-center flex flex-col gap-5 font-medium">
+                    <a href="">Support</a>
+                    <a href="">Knowledge base</a>
+                    <a href="">Live chat</a>
+                </div>
+                <div class="center-2 flex flex-col gap-5 font-medium">
+                    <a href="">Jobs</a>
+                    <a href="">Our team</a>
+                    <a href="">Leadership</a>
+                    <a href="">Privacy Policy</a>
+                </div>
+                <div class="center-right flex flex-col gap-5 font-medium">
+                    <a href="">Nordic Chair</a>
+                    <a href="">Kruzo Aero</a>
+                    <a href="">Ergonomic Chair</a>
+                </div>
+
+            </div>
+
+            <div class="line h-[1px] w-full bg-gray-300 mt-20"></div>
+
+            <div class="footer-bottom flex items-center justify-between">
+                <div class="bottom-left">
+                    <p><a href="" class="text-gray-500" > RIKIT KUMAR</a> Copyright ©2026. All Rights Reserved. — Designed with love by <a href="" class="text-gray-500">Untree.co</a>
+                        </p>
+                </div>
+
+                <div class="bottom-right ">
+                    <a href="" class="text-gray-500">Terms &amp; Conditions</a> <span class="mx-5">|</span> <a href="" class="text-gray-500">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
+
+
+
+<!-- https://untree.co/preview/?item=furni-furniture-ecommerce-website-template-free-download     website link -->
